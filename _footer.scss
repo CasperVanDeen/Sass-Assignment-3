@@ -1,0 +1,10 @@
+/* Scss Document */
+@mixin footer {
+	background-color: $brand-primary;
+	padding: 2em;
+	color: $brand-white;
+}
+
+footer {
+@include footer;	
+}

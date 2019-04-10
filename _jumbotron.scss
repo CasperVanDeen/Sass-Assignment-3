@@ -1,0 +1,8 @@
+/* Scss Document */
+@mixin no-margin {
+	margin: 0;
+}
+.jumbotron {
+	@include my-gradient;
+	@include no-margin;
+} 

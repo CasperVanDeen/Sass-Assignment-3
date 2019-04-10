@@ -1,0 +1,33 @@
+/* Scss Document */
+$background-path:url("img/bg-top-1.jpg");
+$full-height:100vh;
+
+@mixin header {
+	background-image: url("../img/bg-top.png") !important;
+  	background-position: bottom;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+	position: relative;
+}
+
+@mixin full-height {
+		height: $full-height;
+} 
+
+@mixin fixed-top {
+	top: 0 !important;
+	position: fixed !important;
+}
+
+.header {
+	@include header;
+	@include full-height;
+}
+
+.full-height {
+	@include full-height;
+}
+
+.fixed-top {
+	@include fixed-top;
+}
